@@ -1,0 +1,53 @@
+$color-black: #19171C;
+$color-white: #F0ECF9;
+$color-background: #272020;
+$color-background-2: #544545;
+$color-secondary-1: #D59C90;
+$color-secondary-2: #604039;
+$color-primary: #AC6253;
+$color-red: #F906F9;
+$color-green: #A8F906;
+$color-blue: #06F9F9;
+
+* {
+  all: unset;
+}
+
+.bar {
+  padding: 5px 20px;
+  background-color: $color-background;
+}
+
+.bar-left {
+  color: $color-blue;
+}
+
+.logo {
+  color: $color-primary;
+}
+
+.workspaces {
+  .active {
+    color: $color-blue
+  }
+
+  .inactive {
+    color: $color-secondary-2;
+  }
+}
+
+.time {
+  color: $color-blue;
+}
+
+.icon-module {
+  .icon {
+    color: $color-primary;
+    font-size: 1.5em;
+  }
+
+  .text {
+    padding: 0 0 0 10px;
+  }
+}
+

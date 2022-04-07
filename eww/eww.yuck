@@ -1,0 +1,88 @@
+; --------------------
+; --- Variables
+; --------------------
+
+;"🔊" volume
+(defpoll time_poll :interval "1s" "date '+%H:%M'")
+(defpoll date_poll :interval "1m" "date '+%d %b'")
+
+(deflisten workspaces_listen "./modules/workspaces.sh")
+(deflisten notifications_listen :initial '{"show": false, "content": ""}' "./modules/notifications.sh")
+
+; --------------------
+; --- Windows
+; --------------------
+
+(defwindow bar
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x 0
+                      :y 0
+                      :width "100%"
+                      :height "40px"
+                      :anchor "top center")
+  :reserve (struts :distance "40px" :side "top")
+  (bar))
+
+(defwindow foobar
+  :monitor 0
+  :windowtype "normal"
+  (notification-revealer)
+)
+
+; --------------------
+; --- Helpers
+; --------------------
+
+(defwidget icon-module [icon ?class]
+  (box :class "${class} icon-module"
+       :orientation "h"
+       :halign "end"
+       :space-evenly false
+    (label :class "icon" :text "${icon}")
+    (box :class "text" :valign "center"
+      (children))))
+
+; --------------------
+; --- Widgets
+; --------------------
+
+(defwidget bar []
+  (centerbox :orientation "h"
+    (bar__left)
+    (bar__center)
+    (bar__right)))
+
+(defwidget bar__left []
+  (box :orientation "h" :class "bar-left" :halign "start" :space-evenly false :spacing 20
+    (notification-revealer)
+  ))
+
+(defwidget bar__center []
+  (box :orientation "h"
+    (workspaces)
+  ))
+
+(defwidget bar__right []
+  (box :orientation "h" :class "bar-right" :halign "end" :space-evenly false :spacing 20
+    ;(date)
+    (time)
+  ))
+
+(defwidget workspaces []
+  (icon-module :class "workspaces" :icon "" (literal :content workspaces_listen)))
+
+(defwidget workspace [active] (box :class {active ? "active" : "inactive"} ""))
+
+(defwidget date [] (icon-module :class "date" :icon "" (label :text date_poll)))
+; "" time
+(defwidget time [] (icon-module :class "time" :icon "" (label :text time_poll)))
+
+(defwidget notification-revealer []
+  (box :class "notification-revealer"
+       :orientation "h"
+       :space-evenly false
+    (revealer :reveal {notifications_listen.show} :transition "slideright"
+      (box (literal :valign "center" :content {notifications_listen.content})))
+  )
+)
