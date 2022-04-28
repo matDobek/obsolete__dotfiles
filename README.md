@@ -1,9 +1,7 @@
 # Preview
 
 ![image](https://user-images.githubusercontent.com/4257729/165862505-3c2f1566-3fb0-4059-8d47-014a35873b64.png)
-![image](https://user-images.githubusercontent.com/4257729/165862527-69e34a85-605f-44da-aee5-a34ccb1afc81.png)
-
-
+![image](https://user-images.githubusercontent.com/4257729/165862938-4ea5bd63-072a-4c4b-a6ce-7e1d78864ca0.png)
 
 # Post Installation
 
