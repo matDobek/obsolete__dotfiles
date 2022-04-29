@@ -128,6 +128,11 @@ export PATH=$PATH
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 
 # --------------------
+# Erlang flags
+# --------------------
+export ERL_AFLAGS="-kernel shell_history enabled"
+
+# --------------------
 # OS Specyfic :: Mac
 # --------------------
 
@@ -144,3 +149,4 @@ export PATH=$PATH
 # autojump
 # source "$(nix-store --query --references "$(which autojump)" | grep autojump)/share/autojump/autojump.bash"
 #. "$HOME/.cargo/env"
+

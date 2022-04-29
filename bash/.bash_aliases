@@ -75,6 +75,8 @@ alias v='xclip -o -selection clipboard'
 alias arr='youtube-dl --extract-audio --audio-format mp3 '
 alias remove--ds-store='sudo find ./ -depth -name ".DS_Store" -exec rm {} \;'
 
+alias noice--json='python -m json.tool'
+
 # --------------------
 # LaTeX
 # --------------------

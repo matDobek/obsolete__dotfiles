@@ -33,7 +33,8 @@ import qualified XMonad.Operations as Operations
 import qualified XMonad.StackSet as W
 
 main = do
-    h <- spawnPipe "killall tiramisu; eww close-all && eww reload && eww open bar && eww open foobar && sleep 1 && notify-send \"$(hostnamectl | grep 'hostname' | awk '{print $3}'): o/\""
+    j <- spawnPipe "/home/cr0xd/main/friday/dotfiles/eww/modules/friday--notifications.sh --init &"
+    h <- spawnPipe "eww close-all && eww reload && eww open dock && eww open control-center && eww open notification-center"
     xmonad
       $ docks
       $ ewmh
@@ -67,7 +68,7 @@ font          = "Misc Termsyn.Icons:size=13"
 
 blackColor = "#19171C"
 whiteColor = "#F0ECF9"
-mainColor1 = "#06F9F9"
+mainColor1 = "#ef9eac"
 
 bgColor       = blackColor
 fgColor       = whiteColor
@@ -183,7 +184,7 @@ terminalScratchpad = NS "scratchpad" spawnTerm queryBool floating
           queryBool = title =? "scratchpad"
           floating  = customFloating $ W.RationalRect l t w h
                       where
-                        h = 0.4
+                        h = 0.5
                         w = 0.8
                         t = 1 - h
                         l = (1 - w) / 2

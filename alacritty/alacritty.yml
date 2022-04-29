@@ -39,35 +39,42 @@ colors:
 
   # Normal colors
   normal:
-    black:    '#19171C'
+    #black:    '#19171C'
+    #white:    '#F0ECF9'
+    #cyan:     '#D59C90'
+    #magenta:  '#604039'
+    #yellow:   '#AC6253'
+    #red:      '#F906F9'
+    #green:    '#A8F906'
+    black:    '#121212'
     white:    '#F0ECF9'
-    cyan:     '#D59C90'
-    magenta:  '#604039'
-    yellow:   '#AC6253'
-    red:      '#F906F9'
-    green:    '#A8F906'
-    blue:     '#06F9F9'
+    yellow:   '#F2E0C0'
+    magenta:  '#ef9eac'
+    cyan:     '#633636'
+    red:      '#C98282'
+    green:    '#A6C982'
+    blue:     '#cee6fe'
 
   # Bright colors
   bright:
-    black:    '#19171C'
+    black:    '#121212'
     white:    '#F0ECF9'
-    cyan:     '#D59C90'
-    magenta:  '#604039'
-    yellow:   '#AC6253'
-    red:      '#F906F9'
-    green:    '#A8F906'
-    blue:     '#06F9F9'
+    yellow:   '#F2E0C0'
+    magenta:  '#ef9eac'
+    cyan:     '#633636'
+    red:      '#C98282'
+    green:    '#A6C982'
+    blue:     '#cee6fe'
 
   # Dim colors
   dim:
-    black:    '#19171C'
+    black:    '#121212'
     white:    '#F0ECF9'
-    cyan:     '#D59C90'
-    magenta:  '#604039'
-    yellow:   '#AC6253'
-    red:      '#F906F9'
-    green:    '#A8F906'
-    blue:     '#06F9F9'
+    yellow:   '#F2E0C0'
+    magenta:  '#ef9eac'
+    cyan:     '#633636'
+    red:      '#C98282'
+    green:    '#A6C982'
+    blue:     '#cee6fe'
 
 theme: TamTam

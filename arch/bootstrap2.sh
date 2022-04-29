@@ -37,6 +37,7 @@ passwd
 useradd -m cr0xd
 passwd cr0xd
 chmod cr0xd: /home/cr0xd
+chown -R cr0xd: /home/cr0xd
 usermod -aG wheel cr0xd
 visudo
 

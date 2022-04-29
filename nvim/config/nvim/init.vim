@@ -29,7 +29,7 @@ Plug 'elkowar/yuck.vim'          " yuck
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'ghifarit53/tokyonight-vim', { 'as': 'tokyonight' }
 Plug 'danilo-augusto/vim-afterglow', { 'as': 'afterglow' }
-Plug 'matDobek/tamtam.nvim', { 'as': 'tamtam' }
+Plug 'file://'.expand('~/main/friday/colorschemes/tamtam.nvim'), { 'as': 'tamtam' }
 
 " maybe
 Plug 'norcalli/nvim-colorizer.lua' " color highlighter

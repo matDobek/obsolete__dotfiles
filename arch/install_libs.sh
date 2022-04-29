@@ -86,6 +86,7 @@ paru -S --noconfirm nerd-fonts-fira-code
 # Fonts for google chrome - to display unicode symbls ( ·)
 sudo pacman -S --noconfirm noto-fonts
 sudo pacman -S --noconfirm noto-fonts-emoji
+paru -S --noconfirm  ttf-font-awesome
 fc-cache -vf
 
 #================
@@ -143,7 +144,7 @@ paru -S --noconfirm spotify
 #     tlmgr install package_name
 #===================
 
-sudo pacman -Sy texlive-most
+sudo pacman -Sy --noconfirm texlive-most
 
 #================
 # Lanugages
@@ -246,5 +247,9 @@ sudo pacman -S --noconfirm nemo
 # to enable phoenix live reloading
 sudo pacman -S --noconfirm inotify-tools
 
+#sudo pacman -S --noconfirm zsh
+#sudo pacman -S --noconfirm zsh-autosuggestions
+#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-
+# sudo pacman -S --noconfirm fish
+# curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
