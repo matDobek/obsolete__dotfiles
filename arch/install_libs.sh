@@ -154,13 +154,13 @@ paru -S --noconfirm unzip asdf-vm
 
 # as user, in home dir
 
-asdf install elixir latest
+asdf plugin add erlang
 asdf install erlang latest
-asdf install ruby latest
-
-asdf local ruby latest
-asdf local elixir latest
 asdf local erlang latest
+
+asdf plugin add elixir
+asdf install elixir latest
+asdf local elixir latest
 
 #===================
 # Language servers
@@ -188,6 +188,11 @@ gem install neovim
 #================
 # Steam installation
 #================
+
+# uncomment MULTILIB
+#sudo vim /etc/pacman.conf
+#sudo pacman -S --noconfirm nvidia
+#sudo pacman -S --noconfirm nvidia-utils
 
 #sudo pacman -S wine
 #sudo pacman -S steam-manjaro
@@ -253,3 +258,6 @@ sudo pacman -S --noconfirm inotify-tools
 
 # sudo pacman -S --noconfirm fish
 # curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
+sudo pacman -S --noconfirm erlang
+sudo pacman -S --noconfirm glu mesa wxgtk2 libpng
