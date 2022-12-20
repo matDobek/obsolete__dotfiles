@@ -29,9 +29,12 @@ Plug 'elkowar/yuck.vim'          " yuck
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'ghifarit53/tokyonight-vim', { 'as': 'tokyonight' }
 Plug 'danilo-augusto/vim-afterglow', { 'as': 'afterglow' }
+Plug 'sts10/vim-pink-moon'
+Plug 'morhetz/gruvbox'
 Plug 'file://'.expand('~/main/friday/colorschemes/tamtam.nvim'), { 'as': 'tamtam' }
 
 " maybe
+"Plug 'jbyuki/venn.nvim' " Draw ASCII diagrams
 Plug 'norcalli/nvim-colorizer.lua' " color highlighter
 Plug 'tpope/vim-dispatch'
 
@@ -298,9 +301,17 @@ nmap <silent> <leader>tg :TestVisit<CR>
 "autocmd FileType ruby noremap <leader>ram :! $friday__scripts_path/rails_alternate_file/main %:p minitest <CR>
 "autocmd FileType ruby noremap <leader>rar :! $friday__scripts_path/rails_alternate_file/main %:p rspec <CR>
 
+" --------------------
+" jbyuki/venn.nvim
+" --------------------
 
+"set virtualedit=all
+"nmap <C-h> <C-v>h:VBox<CR>
+"nmap <C-j> <C-v>j:VBox<CR>
+"nmap <C-k> <C-v>k:VBox<CR>
+"nmap <C-l> <C-v>l:VBox<CR>
 
-
+"vmap <C-f> :VBox<CR>
 
 " ============= LUA ==============
 
