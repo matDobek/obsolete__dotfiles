@@ -5,7 +5,7 @@
 alias j='z'
 alias open='xdg-open'
 #alias aws--login='aws-vault exec -d 8h -n fresha-developer --backend=file'
-#alias ssh--login='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519 ~/.ssh/fresha'
+alias ssh--login='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519'
 
 # --------------------
 # OS Specific :: MacOS
