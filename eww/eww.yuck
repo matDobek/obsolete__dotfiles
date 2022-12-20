@@ -2,8 +2,6 @@
 ;     pacman -Qqu | wc -l
 
 
-
-
 ; --------------------
 ; --- Debugging
 ; --------------------
@@ -131,7 +129,7 @@
 
     ; -- row --
     (box :orientation "h" :space-evenly "true" :spacing 10
-      (calendar)
+      (cal)
       (clock)
     )
 
@@ -190,7 +188,7 @@
 (defpoll clock-hh :interval "1s"  "date +'%H'")
 (defpoll clock-mm :interval "1s"  "date +'%M'")
 
-(defwidget calendar []
+(defwidget cal []
       (box :orientation "v" :class "calendar tile" :space-evenly false
         (box :class "primary"   {calendar-date})
         (box :class "secondary" {calendar-day})))
