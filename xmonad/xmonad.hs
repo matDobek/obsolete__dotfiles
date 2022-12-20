@@ -258,8 +258,8 @@ myKeys =
   , ((0, 0x1008ff12), spawn "friday--audio--toggle")
   , ((0, 0x1008ff11), spawn "friday--audio--dec")
   , ((0, 0x1008ff13), spawn "friday--audio--inc")
-  , ((0, xK_Print), spawn "friday--screenshot--take")
-  , ((m, xK_Print), spawn "friday--screenshot--edit")
+  , ((m, xK_F1), spawn "friday--screenshot--take")
+  , ((m, xK_F2), spawn "friday--screenshot--edit")
   , ((m, xK_q), Operations.kill)
   , ((m, xK_r), spawn reloadXmonad)
   ]
