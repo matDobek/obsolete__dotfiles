@@ -54,6 +54,7 @@ ln -sf $dotfiles_dir/alacritty/alacritty.yml ~/.config/alacritty/
 
 ln -sf $dotfiles_dir/bash/.bashrc ~/
 ln -sf $dotfiles_dir/bash/.bash_aliases ~/
+ln -sf $dotfiles_dir/bash/.bash_secrets.sample ~/
 ln -sf $dotfiles_dir/bash/.bash_profile ~/
 ln -sf $dotfiles_dir/bash/.inputrc ~/
 
@@ -87,12 +88,10 @@ ln -sf $dotfiles_dir/tmux/sessions/* ~/.tmux_sessions/
 rm -rf ~/.config/nvim
 mkdir -p ~/.config/nvim
 
-ln -sf $dotfiles_dir/nvim/config/nvim/colors ~/.config/nvim/
-ln -sf $dotfiles_dir/nvim/config/nvim/init.vim ~/.config/nvim/
+ln -sf $dotfiles_dir/nvim/init.lua ~/.config/nvim/
 
-rm -rf ~/.local/share/nvim
-mkdir -p ~/.local/share/nvim/site/autoload
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+ln -sf $dotfiles_dir/nvim/after ~/.config/nvim/
+ln -sf $dotfiles_dir/nvim/lua ~/.config/nvim/
 
 #================
 # ruby
