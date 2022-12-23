@@ -25,10 +25,11 @@ COLOR__AWS=${COLOR_BLUE}
 COLOR__NIX_SHELL=${COLOR_BLUE}
 
 # --------------------
-# Aliases
+# Aliases && Secrets
 # --------------------
 
 source ~/.bash_aliases
+source ~/.bash_secrets
 
 # --------------------
 # History
@@ -149,4 +150,3 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 # autojump
 # source "$(nix-store --query --references "$(which autojump)" | grep autojump)/share/autojump/autojump.bash"
 #. "$HOME/.cargo/env"
-
