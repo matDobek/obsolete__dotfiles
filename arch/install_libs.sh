@@ -261,3 +261,5 @@ sudo pacman -S --noconfirm inotify-tools
 
 sudo pacman -S --noconfirm erlang
 sudo pacman -S --noconfirm glu mesa wxgtk2 libpng
+
+sudo pacman -S lazygit

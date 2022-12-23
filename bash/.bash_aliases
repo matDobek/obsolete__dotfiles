@@ -133,6 +133,7 @@ alias e--check='e--check-format && e--check-credo && e--check-compile'
 # Git
 # --------------------
 
+alias gg='lazygit'
 alias gb='git branch'
 alias gbd='git branch | grep -v "\(master\|production\|beta\)" | xargs git branch -d'
 alias gbD='git branch | grep -v "\(master\|production\|beta\)" | xargs git branch -D'
