@@ -45,6 +45,8 @@ require("packer").startup(function(use)
   use("github/copilot.vim")
   use("aduros/ai.vim")
 
+  use("numToStr/Navigator.nvim")
+
   use("folke/zen-mode.nvim")
   use("godlygeek/tabular")
   use("nvim-lualine/lualine.nvim")
